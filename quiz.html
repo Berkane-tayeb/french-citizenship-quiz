@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Examen Civique - Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-VOTRE_CODE_ICI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Quiz de préparation à l'Examen Civique</h1>
+            <p class="subtitle">Testez vos connaissances pour réussir votre examen</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="quiz-page">
+            <div id="timer-container" class="timer-container">
+                <!-- Le chronomètre sera injecté ici par JavaScript -->
+            </div>
+            
+            <div class="ad-container">
+                <div class="ad-banner ad-top">
+                    <div class="ad-label">Publicité</div>
+                    <div class="ad-placeholder">
+                        <div class="ad-demo">
+                            <p>Espace publicitaire 728x90</p>
+                            <p class="ad-demo-text">Publicités Google Adsense</p>
+                        </div>
+                    </div>
+                    <p class="ad-notice">Les publicités nous aident à maintenir ce service gratuit.</p>
+                </div>
+            </div>
+            
+            <div class="quiz-content">
+                <div class="questions-section">
+                    <div id="question-container">
+                        <!-- La question actuelle sera injectée ici par JavaScript -->
+                        <div class="loading">
+                            <p>Chargement du quiz...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <button id="prev-button" class="nav-button prev" disabled>
+                            ← Question précédente
+                        </button>
+                        
+                        <div class="progress-indicator">
+                            Question <span id="current-question">1</span> sur <span id="total-questions">10</span>
+                        </div>
+                        
+                        <button id="next-button" class="nav-button next">
+                            Question suivante →
+                        </button>
+                    </div>
+                    
+                    <div class="quiz-actions">
+                        <button id="submit-button" class="action-button submit">
+                            Soumettre le quiz
+                        </button>
+                        <button id="reset-button" class="action-button reset">
+                            Recommencer
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="ad-banner ad-sidebar">
+                        <div class="ad-label">Publicité</div>
+                        <div class="ad-placeholder">
+                            <div class="ad-demo">
+                                <p>Espace publicitaire 300x250</p>
+                                <p class="ad-demo-text">Publicités Google Adsense</p>
+                            </div>
+                        </div>
+                        <p class="ad-notice">Les publicités nous aident à maintenir ce service gratuit.</p>
+                    </div>
+                    
+                    <div class="questions-list">
+                        <h3>Questions</h3>
+                        <div class="questions-grid" id="questions-grid">
+                        </div>
+                        <div class="answered-count" id="answered-count">
+                            Répondues: 0 / 40
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-info">
+                        <h3>Instructions</h3>
+                        <ul>
+                            <li>Vous avez 45 minutes pour compléter le quiz</li>
+                            <li>Cliquez sur une réponse pour la sélectionner</li>
+                            <li>Vous pouvez changer votre réponse à tout moment</li>
+                            <li>Un score de 32/40 est requis pour réussir</li>
+                            <li>Votre progression est automatiquement sauvegardée</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <footer class="modern-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="footer-logo-text">
+                                <span class="footer-logo-title">CitizenQuiz</span>
+                                <span class="footer-logo-subtitle">Préparation à la naturalisation</span>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Plateforme interactive de préparation à l'examen civique.
+                            Testez vos connaissances et augmentez vos chances de réussite.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Navigation</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> À propos</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Ressources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Questions fréquentes</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Conseils pratiques</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Contact</h3>
+                        <!-- <p class="footer-newsletter-text">
+                            Inscrivez-vous pour recevoir des conseils et des mises à jour
+                        </p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre adresse email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form> -->
+                        <div class="footer-contact">
+                            <p><i class="fas fa-envelope"></i> contact@citizenquiz.fr</p>
+                            <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2023 CitizenQuiz. Tous droits réservés.
+                    </p>
+                    <div class="footer-legal">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions d'utilisation</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                    <div class="footer-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Site sécurisé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Préparation à l'Examen Civique - Résultats</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-VOTRE_CODE_ICI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Quiz de préparation à l'Examen Civique</h1>
+            <p class="subtitle">Résultats de votre test</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="results-page">
+            <h1>Résultats de votre quiz</h1>
+            
+            <div id="results-summary" class="results-summary">
+                <!-- Les résultats seront injectés ici par JavaScript -->
+                <div class="loading">
+                    <p>Chargement des résultats...</p>
+                </div>
+            </div>
+            
+            <div class="results-details" id="results-details">
+                <!-- Les détails des réponses seront injectés ici -->
+            </div>
+            
+            <div class="results-actions">
+                <a href="quiz.html" class="action-button retry">Refaire le quiz</a>
+                <a href="index.html" class="action-button home">Retour à l'accueil</a>
+            </div>
+            
+            <div class="recommendations" id="recommendations">
+                <!-- Les recommandations seront injectées ici -->
+            </div>
+        </div>
+    </main>
+
+   <footer class="modern-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="footer-logo-text">
+                                <span class="footer-logo-title">CitizenQuiz</span>
+                                <span class="footer-logo-subtitle">Préparation à la naturalisation</span>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Plateforme interactive de préparation à l'examen civique.
+                            Testez vos connaissances et augmentez vos chances de réussite.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="footer-social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Navigation</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> À propos</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Ressources</h3>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Questions fréquentes</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Conseils pratiques</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3 class="footer-title">Contact</h3>
+                        <!-- <p class="footer-newsletter-text">
+                            Inscrivez-vous pour recevoir des conseils et des mises à jour
+                        </p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre adresse email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form> -->
+                        <div class="footer-contact">
+                            <p><i class="fas fa-envelope"></i> contact@citizenquiz.fr</p>
+                            <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2023 CitizenQuiz. Tous droits réservés.
+                    </p>
+                    <div class="footer-legal">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions d'utilisation</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                    <div class="footer-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Site sécurisé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/questions.js"></script>
+    <script src="js/results.js"></script>
+</body>
+</html>
